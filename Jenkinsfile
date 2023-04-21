@@ -10,7 +10,7 @@ pipeline {
         }
         stage('Terraform Plan'){
             steps{
-                sh "terraform plan -var-file=env-${ENV}/${ENV}-backend.tfvars"
+                sh "terraform plan -var-file=env-${ENV}/${ENV}.tfvars"
             }
         }
         stage('Terraform Apply'){
