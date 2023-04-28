@@ -8,5 +8,6 @@ module "vpc" {
   DEFAULT_VPC_ID         = var.DEFAULT_VPC_ID
   DEFAULT_VPC_CIDR       = var.DEFAULT_VPC_CIDR
   DEFAULT_VPC_RT         = var.DEFAULT_VPC_RT
+  PRIVATE_HOSTED_ZONE_ID = var.PRIVATE_HOSTED_ZONE_ID
 }
 # This always goes with the main branch, so how can I tell the module to pick the code from intended branch
