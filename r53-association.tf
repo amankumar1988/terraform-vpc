@@ -1,4 +1,4 @@
-resource "aws_route53_record" "dev-ns" {
+resource "aws_route53_zone_association" "secondary" {
   zone_id = var.PRIVATE_HOSTED_ZONE_ID
-  name    = "dev.example.com"
+  vpc_id = aws_vpc.main.id
 }
